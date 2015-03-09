@@ -1,0 +1,7 @@
+FROM golang
+
+RUN mkdir /tmp/build
+
+ADD *.go /tmp/build/
+
+CMD cd /tmp/build/; go build hello.go; rm hello.go; tar -czf - hello

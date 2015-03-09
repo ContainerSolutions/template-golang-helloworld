@@ -1,0 +1,7 @@
+FROM golang
+
+RUN mkdir app
+
+ADD binaries.tar.gz /app/
+
+ENTRYPOINT /app/hello
