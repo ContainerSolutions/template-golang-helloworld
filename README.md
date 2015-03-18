@@ -2,8 +2,8 @@
 
 This project is built with 2 containers: a build and a run container.
 
-* The build container compiles the code and and outputs a tarball containing
-  depending on the platform, a Golang binary or an executable jar
+* The build container compiles the code and and outputs a tarball which contains,
+  depending on the platform, a Golang binary, an executable jar or someother runtime artifact
 * The run container ADDs the binary tarball which gets unpacked automatically and runs the application
 
 Benefits
